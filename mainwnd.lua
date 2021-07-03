@@ -1,7 +1,7 @@
 local GUI = require("GUI")
 local system = require("System")
 local workspace,window,menu=system.addWindow(GUI.filledWindow(1,1,120,40,0xE1E1E1))
-local layout=window:addChild(GUI.layout(2,2,window.width,window.height,1,1))
+local layout=window:addChild(GUI.layout(2,2,window.width,window.height,3,2))
 layout:setRowHeight(1,GUI.SIZE_POLICY_RELATIVE,0.8)
 local contextMenu=menu:addContextMenuItem("File")
 contextMenu:addItem("quit").onTouch=function()
